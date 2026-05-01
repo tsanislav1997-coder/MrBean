@@ -6,7 +6,7 @@ body{
 }
 .hero{
   height:100vh;
-  background:url(file_0000000069a87246a5ea34112dc0da6f.png') center/cover;
+  background:url('file_0000000069a87246a5ea34112dc0da6f.png') center/cover;
   display:flex;
   justify-content:center;
   align-items:center;
