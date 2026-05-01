@@ -3,181 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mr. Bean | Професионални Транспортни Услуги | София</title>
+    <title>Mr. Bean | Професионални Транспортни и Хамалски Услуги</title>
     <style>
         :root {
             --gold: #f1c40f;
-            --dark: #0f0f0f;
-            --gray: #1a1a1a;
-            --light-gray: #2a2a2a;
+            --dark: #0a0a0a;
+            --gray: #161616;
             --text: #ffffff;
         }
         body {
             background-color: var(--dark);
             color: var(--text);
-            font-family: 'Segoe UI', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             line-height: 1.6;
         }
-        .container { max-width: 900px; margin: auto; padding: 20px; }
-        
         header {
-            padding: 50px 20px;
+            padding: 40px 20px;
             text-align: center;
-            background: linear-gradient(to bottom, #111, var(--dark));
-            border-bottom: 2px solid var(--gold);
+            background: linear-gradient(to bottom, #1a1a1a, var(--dark));
         }
-        .logo-main {
-            max-width: 280px;
-            width: 80%;
-            border-radius: 15px;
+        .logo {
+            max-width: 250px;
+            width: 70%;
             border: 3px solid var(--gold);
-            box-shadow: 0 0 25px rgba(241, 196, 15, 0.3);
-            margin-bottom: 20px;
-        }
-        h1 { color: var(--gold); font-size: 2.8rem; text-transform: uppercase; margin: 10px 0; }
-        .motto { color: #aaa; font-style: italic; font-size: 1.2rem; }
-
-        .hero-van {
-            background: #111;
-            border-radius: 20px;
-            padding: 30px;
-            margin: 30px 0;
-            border: 1px solid var(--light-gray);
-            text-align: center;
-        }
-        .van-img {
-            max-width: 100%;
             border-radius: 15px;
-            border: 2px solid #333;
+            box-shadow: 0 0 20px rgba(241, 196, 15, 0.2);
         }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 { color: var(--gold); font-size: 2.2rem; text-transform: uppercase; margin-bottom: 5px; }
+        .motto { color: #888; font-style: italic; margin-bottom: 30px; }
 
-        .services-section h2 { text-align: center; color: var(--gold); font-size: 2.2rem; }
-        .service-box {
+        /* Секция Услуги */
+        .service-section {
             background: var(--gray);
-            border-radius: 15px;
+            margin-bottom: 20px;
             padding: 25px;
-            margin-bottom: 25px;
+            border-radius: 15px;
             border-left: 5px solid var(--gold);
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
+            text-align: left;
         }
-        @media(min-width: 600px) {
-            .service-box { grid-template-columns: 1fr 1fr; align-items: center; }
+        .service-section h3 {
+            color: var(--gold);
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            font-size: 1.4rem;
         }
-        .service-info h3 { color: var(--gold); margin-top: 0; font-size: 1.5rem; }
-        .service-thumb {
-            width: 100%;
-            height: 220px;
-            border-radius: 12px;
-            object-fit: cover;
-            border: 2px solid #333;
+        .service-section h3 span { margin-right: 15px; font-size: 1.8rem; }
+        .service-section p { color: #ccc; margin-bottom: 10px; }
+        .service-list {
+            margin: 0;
+            padding-left: 20px;
+            color: #aaa;
+            font-size: 0.95rem;
         }
+        .service-list li { margin-bottom: 5px; }
 
-        .comparison-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            margin: 30px 0;
+        /* Защо нас */
+        .why-us {
+            text-align: center;
+            padding: 40px 20px;
+            background: var(--dark);
         }
-        .comparison-img {
-            max-width: 100%;
-            border-radius: 10px;
-            object-fit: cover;
-            height: 250px;
-            border: 2px solid #333;
-        }
-        .comparison-label { text-align: center; font-weight: bold; color: var(--gold); margin-top: 5px; }
+        .why-us h2 { color: var(--gold); }
 
-        .call-now-fixed {
+        /* Бутон за обаждане */
+        .cta-box {
             position: fixed;
             bottom: 0;
             left: 0;
-            width: 100%;
-            background: rgba(15, 15, 15, 0.98);
+            right: 0;
+            background: rgba(10, 10, 10, 0.95);
             padding: 15px 20px;
+            border-top: 1px solid var(--gold);
             text-align: center;
-            border-top: 2px solid var(--gold);
-            z-index: 1000;
+            z-index: 100;
         }
         .call-btn {
             background: var(--gold);
             color: #000;
             display: block;
-            max-width: 400px;
-            margin: auto;
-            padding: 18px;
+            padding: 15px;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.6rem;
+            font-size: 1.3rem;
             border-radius: 50px;
+            transition: 0.3s;
         }
+        .call-btn:active { transform: scale(0.95); }
         
-        .footer-space { height: 120px; }
-        footer { text-align: center; padding: 30px; color: #555; background: #080808; }
+        .spacer { height: 100px; }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="file_0000000069a87246a5ea34112dc0da6f.png" alt="Mr. Bean Logo" class="logo-main">
+    <img src="file_00000000069a87246a5ea34112dc0da6f.png" alt="Mr. Bean Logo" class="logo">
     <h1>Mr. Bean</h1>
-    <p class="motto">Професионално преместване и почистване с грижа.</p>
+    <p class="motto">Вашият товар е наша грижа!</p>
 </header>
 
 <div class="container">
     
-    <div class="hero-van">
-        <h2>Нашият транспорт</h2>
-        <img src="1000105129.jpg" alt="Mr. Bean Бус" class="van-img">
-        <p style="margin-top: 15px; color: #ccc;">Надежден транспорт за вашите мебели и стоки.</p>
+    <div class="service-section">
+        <h3><span>🧹</span> Чистене на мазета и тавани</h3>
+        <p>Пълно освобождаване на запустели пространства от ненужни вещи и боклуци.</p>
+        <ul class="service-list">
+            <li>Демонтаж на стари мебели и рафтове.</li>
+            <li>Събиране на отпадъци в здрави чували.</li>
+            <li>Извозване до лицензирано сметище.</li>
+            <li>Почистване след наематели или продажба на имот.</li>
+        </ul>
     </div>
 
-    <div class="services-section">
-        <h2>Услуги</h2>
-        
-        <div class="service-box">
-            <div class="service-info">
-                <h3>🧹 Почистване и извозване</h3>
-                <p>Изхвърляне на стари мебели и строителни отпадъци.</p>
-            </div>
-            <img src="1000106609.jpg" alt="Извозване" class="service-thumb">
-        </div>
-
-        <div class="service-box">
-            <div class="service-info">
-                <h3>📦 Хамалски услуги</h3>
-                <p>Внимателно товарене и укрепване на багажа.</p>
-            </div>
-            <img src="1000105250.jpg" alt="Товарене" class="service-thumb">
-        </div>
+    <div class="service-section">
+        <h3><span>📦</span> Транспорт на мебели и техника</h3>
+        <p>Сигурен превоз на вашето имущество в София и цялата страна.</p>
+        <ul class="service-list">
+            <li>Превоз на дивани, гардероби, легла и матраци.</li>
+            <li>Транспорт на хладилници, перални и печки (винаги изправени!).</li>
+            <li>Доставка на покупки от IKEA, Praktiker, Bauhaus и др.</li>
+            <li>Укрепване с колани за максимална защита.</li>
+        </ul>
     </div>
 
-    <h2 style="text-align:center; color:var(--gold);">Резултати</h2>
-    <div class="comparison-grid">
-        <div>
-            <img src="1000105240.jpg" alt="Преди" class="comparison-img">
-            <p class="comparison-label">ПРЕДИ</p>
-        </div>
-        <div>
-            <img src="1000105248.jpg" alt="След" class="comparison-img">
-            <p class="comparison-label">СЛЕД</p>
-        </div>
+    <div class="service-section">
+        <h3><span>🏗️</span> Строителни материали</h3>
+        <p>Логистика за вашия ремонт без излишни усилия от ваша страна.</p>
+        <ul class="service-list">
+            <li>Доставка на гипскартон, цимент, тухли и плочки.</li>
+            <li>**Качване по етажи** (със или без асансьор).</li>
+            <li>Изхвърляне на строителни отпадъци след ремонт.</li>
+        </ul>
+    </div>
+
+    <div class="service-section">
+        <h3><span>🚛</span> Хамалски услуги</h3>
+        <p>Професионална сила за всякаква тежка работа.</p>
+        <ul class="service-list">
+            <li>Товарене и разтоварване на камиони и контейнери.</li>
+            <li>Пренасяне на пиана, каси и тежки машини.</li>
+            <li>Цялостно преместване на офиси и апартаменти.</li>
+        </ul>
+    </div>
+
+    <div class="why-us">
+        <h2>Защо да изберете Mr. Bean?</h2>
+        <p>✅ Коректно отношение и точни часове.</p>
+        <p>✅ Опитни хамали, които пазят вещите ви.</p>
+        <p>✅ Конкурентни цени без скрити такси.</p>
+        <p>✅ Работа в почивни дни и празници.</p>
     </div>
 
 </div>
 
-<div class="footer-space"></div>
+<div class="spacer"></div>
 
-<div class="call-now-fixed">
-    <a href="tel:0888135012" class="call-btn">📞 ОБАДИ СЕ СЕГА</a>
-    <p style="color:var(--gold); margin: 5px 0 0;">тел: 0888 135 012</p>
+<div class="cta-box">
+    <a href="tel:0888135012" class="call-btn">📞 ОБАДИ СЕ ЗА ОФЕРТА</a>
+    <p style="margin: 5px 0 0; font-size: 0.9rem; color: var(--gold);">тел: 0888 135 012</p>
 </div>
-
-<footer>
-    <p>&copy; 2024 Mr. Bean Транспортни Услуги | София</p>
-</footer>
 
 </body>
 </html>
