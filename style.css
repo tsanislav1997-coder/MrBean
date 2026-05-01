@@ -1,0 +1,59 @@
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#111;
+  color:white;
+}
+.hero{
+  height:100vh;
+  background:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1600&auto=format&fit=crop') center/cover;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+.overlay{
+  background:rgba(0,0,0,0.65);
+  padding:40px;
+  border-radius:20px;
+}
+h1{
+  font-size:64px;
+  margin:0;
+  color:#ffd700;
+}
+.btn{
+  display:inline-block;
+  margin:10px;
+  padding:14px 24px;
+  background:#ffd700;
+  color:black;
+  text-decoration:none;
+  border-radius:12px;
+  font-weight:bold;
+}
+.viber{
+  background:#7360f2;
+  color:white;
+}
+.services, .gallery, .contact{
+  padding:60px 20px;
+  text-align:center;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:20px;
+  max-width:1000px;
+  margin:auto;
+}
+.card{
+  background:#1d1d1d;
+  padding:24px;
+  border-radius:16px;
+}
+footer{
+  text-align:center;
+  padding:20px;
+  background:black;
+}
